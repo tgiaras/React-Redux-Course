@@ -1,0 +1,59 @@
+.ourwork {
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 5rem 10rem;
+
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+  }
+
+  h2 {
+    padding: 1rem 0rem;
+  }
+  .movie {
+    padding-bottom: 10rem;
+
+    h2 {
+      color: white;
+    }
+
+    .line {
+      height: 0.5rem;
+      background: #23d997;
+      margin-bottom: 3rem;
+    }
+    img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+  }
+  .hide {
+    overflow: hidden;
+  }
+
+  .frame1 {
+    position: fixed;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 100vh;
+    background: #fffebf;
+    z-index: 2;
+  }
+
+  .frame2 {
+    @extend .frame1;
+    background: #ff8efb;
+  }
+
+  .frame3 {
+    @extend .frame1;
+    background: #8ed2ff;
+  }
+
+  .frame4 {
+    @extend .frame1;
+    background: #8effa0;
+  }
+}
